@@ -1,0 +1,147 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ModernAgent - jade-modern-agent</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">jade-modern-agent</a>&nbsp;/&nbsp;<a href="../index.html">it.lamba.agents</a>&nbsp;/&nbsp;<a href="./index.html">ModernAgent</a><br/>
+<br/>
+<h1>ModernAgent</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">ModernAgent</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Agent</span></code>
+<p>An extension of the Jade's <a href="#">Agent</a> including state of the art commodity methods.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ModernAgent</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>An extension of the Jade's <a href="#">Agent</a> including state of the art commodity methods.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-s-t-d_-e-r-r.html">STD_ERR</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">STD_ERR</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-t-d_-o-u-t.html">STD_OUT</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">STD_OUT</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="do-delete.html">doDelete</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">doDelete</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-listening-messages.html">isListeningMessages</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isListeningMessages</span><span class="symbol">(</span><span class="identifier" id="it.lamba.agents.ModernAgent$isListeningMessages(kotlin.Int)/messageType">messageType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-2<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Check if listening to messages. By default, checks if listening to EVERY message, if you need to check if listening only specified message use the parameter <a href="is-listening-messages.html#it.lamba.agents.ModernAgent$isListeningMessages(kotlin.Int)/messageType">messageType</a> using values from class <a href="#">ACLMessage</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="log.html">log</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">log</span><span class="symbol">(</span><span class="identifier" id="it.lamba.agents.ModernAgent$log(kotlin.String, kotlin.Int)/message">message</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="it.lamba.agents.ModernAgent$log(kotlin.String, kotlin.Int)/stream">stream</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Allows to log a message with a header that identifies the agent. By default <a href="log.html">log</a> will print in <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/System.html#out">System.out</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create.html">onCreate</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier" id="it.lamba.agents.ModernAgent$onCreate(kotlin.Array((kotlin.String)))/args">args</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>This method is invoked at the creation of the agent.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-destroy.html">onDestroy</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onDestroy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>This method is invoked when the agent is destroyed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-message-received.html">onMessageReceived</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onMessageReceived</span><span class="symbol">(</span><span class="identifier" id="it.lamba.agents.ModernAgent$onMessageReceived(jade.lang.acl.ACLMessage)/message">message</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>This method is invoked every time there is a message in queue and the agent is listening to that type of <a href="#">ACLMessage</a>. See <a href="start-listening-messages.html">startListeningMessages</a> for more information.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="search-agents.html">searchAgents</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">searchAgents</span><span class="symbol">(</span><span class="identifier" id="it.lamba.agents.ModernAgent$searchAgents(jade.domain.FIPAAgentManagement.DFAgentDescription, kotlin.Function1((kotlin.Array((jade.core.AID)), kotlin.Unit)))/description">description</span><span class="symbol">:</span>&nbsp;<span class="identifier">DFAgentDescription</span><span class="symbol">, </span><span class="identifier" id="it.lamba.agents.ModernAgent$searchAgents(jade.domain.FIPAAgentManagement.DFAgentDescription, kotlin.Function1((kotlin.Array((jade.core.AID)), kotlin.Unit)))/onResult">onResult</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">agentIDs</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><span class="identifier">AID</span><span class="symbol">&gt;</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Search for agent's <a href="#">AID</a>s through the <a href="#">DFService</a>. This method is asynchronous using a thread.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="setup.html">setup</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="shut-down.html">shutDown</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">shutDown</span><span class="symbol">(</span><span class="identifier" id="it.lamba.agents.ModernAgent$shutDown(kotlin.String)/message">message</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Shut down the agent. <a href="on-destroy.html">onDestroy</a> will be called.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="start-listening-messages.html">startListeningMessages</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">startListeningMessages</span><span class="symbol">(</span><span class="identifier" id="it.lamba.agents.ModernAgent$startListeningMessages(kotlin.Int)/messageType">messageType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-2<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Start listening to messages, calling <a href="on-message-received.html">onMessageReceived</a> every new message. By default, every message received is processed, if you need to listen only specified message use the parameter <a href="start-listening-messages.html#it.lamba.agents.ModernAgent$startListeningMessages(kotlin.Int)/messageType">messageType</a> using values from class <a href="#">ACLMessage</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="stop-listening-messages.html">stopListeningMessages</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">stopListeningMessages</span><span class="symbol">(</span><span class="identifier" id="it.lamba.agents.ModernAgent$stopListeningMessages(kotlin.Int)/messageType">messageType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-2<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Spot listening to messages. By default, every message received will stop being processed, if you need to stop listening only specified message use the parameter <a href="stop-listening-messages.html#it.lamba.agents.ModernAgent$stopListeningMessages(kotlin.Int)/messageType">messageType</a> using values from class <a href="#">ACLMessage</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

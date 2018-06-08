@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>createNewAgent - jade-modern-agent</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">jade-modern-agent</a>&nbsp;/&nbsp;<a href="../index.html">it.lamba</a>&nbsp;/&nbsp;<a href="index.html">jade.wrapper.ContainerController</a>&nbsp;/&nbsp;<a href="./create-new-agent.html">createNewAgent</a><br/>
+<br/>
+<h1>createNewAgent</h1>
+<a name="it.lamba$createNewAgent(jade.wrapper.ContainerController, kotlin.reflect.KClass((it.lamba.agents.ModernAgent)), kotlin.String, kotlin.Array((kotlin.String)))"></a>
+<code><span class="keyword">fun </span><span class="identifier">ContainerController</span><span class="symbol">.</span><span class="identifier">createNewAgent</span><span class="symbol">(</span><span class="identifier" id="it.lamba$createNewAgent(jade.wrapper.ContainerController, kotlin.reflect.KClass((it.lamba.agents.ModernAgent)), kotlin.String, kotlin.Array((kotlin.String)))/agentClass">agentClass</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html"><span class="identifier">KClass</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../../it.lamba.agents/-modern-agent/index.html"><span class="identifier">ModernAgent</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="it.lamba$createNewAgent(jade.wrapper.ContainerController, kotlin.reflect.KClass((it.lamba.agents.ModernAgent)), kotlin.String, kotlin.Array((kotlin.String)))/nickname">nickname</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;agentClass.qualifiedName!!<span class="symbol">, </span><span class="identifier" id="it.lamba$createNewAgent(jade.wrapper.ContainerController, kotlin.reflect.KClass((it.lamba.agents.ModernAgent)), kotlin.String, kotlin.Array((kotlin.String)))/args">args</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">AgentController</span></code>
+<p>Creates a new JADE agent, running within this container.</p>
+<h3>Parameters</h3>
+<p><a name="agentClass"></a>
+<code>agentClass</code> - The <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html">KClass</a>&lt;out <a href="#">Agent</a>&gt; to be added to the container.</p>
+<p><a name="nickname"></a>
+<code>nickname</code> - A platform-unique nickname for the newly created agent. The agent will be given a FIPA compliant agent identifier using the nickname and the ID of the platform it is running on.</p>
+<p><a name="args"></a>
+<code>args</code> - A <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">String</a>, containing initialization parameters to pass to the new agent.</p>
+<p><strong>Return</strong><br/>
+A proxy object, allowing to call state-transition forcing methods on the real agent instance.</p>
+<a name="it.lamba$createNewAgent(jade.wrapper.ContainerController, java.lang.Class((it.lamba.agents.ModernAgent)), kotlin.String, kotlin.Array((kotlin.String)))"></a>
+<code><span class="keyword">fun </span><span class="identifier">ContainerController</span><span class="symbol">.</span><span class="identifier">createNewAgent</span><span class="symbol">(</span><span class="identifier" id="it.lamba$createNewAgent(jade.wrapper.ContainerController, java.lang.Class((it.lamba.agents.ModernAgent)), kotlin.String, kotlin.Array((kotlin.String)))/agentClass">agentClass</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<a href="../../it.lamba.agents/-modern-agent/index.html"><span class="identifier">ModernAgent</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="it.lamba$createNewAgent(jade.wrapper.ContainerController, java.lang.Class((it.lamba.agents.ModernAgent)), kotlin.String, kotlin.Array((kotlin.String)))/nickname">nickname</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;agentClass.canonicalName<span class="symbol">, </span><span class="identifier" id="it.lamba$createNewAgent(jade.wrapper.ContainerController, java.lang.Class((it.lamba.agents.ModernAgent)), kotlin.String, kotlin.Array((kotlin.String)))/args">args</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">AgentController</span></code>
+<p>Creates a new JADE agent, running within this container.</p>
+<h3>Parameters</h3>
+<p><a name="agentClass"></a>
+<code>agentClass</code> - The <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a>&lt;out <a href="#">Agent</a>&gt; to be added to the container.</p>
+<p><a name="nickname"></a>
+<code>nickname</code> - A platform-unique nickname for the newly created agent. The agent will be given a FIPA compliant agent identifier using the nickname and the ID of the platform it is running on.</p>
+<p><a name="args"></a>
+<code>args</code> - A <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">String</a>, containing initialization parameters to pass to the new agent.</p>
+<p><strong>Return</strong><br/>
+A proxy object, allowing to call state-transition forcing methods on the real agent instance.</p>
+</BODY>
+</HTML>

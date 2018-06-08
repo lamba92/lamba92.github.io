@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MessageReceiverBehaviour - jade-modern-agent</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">jade-modern-agent</a>&nbsp;/&nbsp;<a href="../index.html">it.lamba.behaviours</a>&nbsp;/&nbsp;<a href="./index.html">MessageReceiverBehaviour</a><br/>
+<br/>
+<h1>MessageReceiverBehaviour</h1>
+<code><span class="keyword">class </span><span class="identifier">MessageReceiverBehaviour</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">CyclicBehaviour</span></code>
+<p>This <a href="#">CyclicBehaviour</a> allows to notify the <a href="#">modernAgent</a> when an <a href="#">ACLMessage</a> with desired <a href="#">MessageTemplate</a> is received.</p>
+<h3>Parameters</h3>
+<p><a name="messageType"></a>
+<code>messageType</code> - Message types are specified in <a href="#">ACLMessage</a> class as public <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>s.</p>
+<p><a name="modernAgent"></a>
+<code>modernAgent</code> - The <a href="#">Agent</a> extending <a href="../../it.lamba.agents/-modern-agent/index.html">ModernAgent</a> that needs to be notified of the messages.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">MessageReceiverBehaviour</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.MessageReceiverBehaviour$<init>(it.lamba.agents.ModernAgent, kotlin.Int)/modernAgent">modernAgent</span><span class="symbol">:</span>&nbsp;<a href="../../it.lamba.agents/-modern-agent/index.html"><span class="identifier">ModernAgent</span></a><span class="symbol">, </span><span class="identifier" id="it.lamba.behaviours.MessageReceiverBehaviour$<init>(it.lamba.agents.ModernAgent, kotlin.Int)/messageType">messageType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code>
+<p>This <a href="#">CyclicBehaviour</a> allows to notify the <a href="#">modernAgent</a> when an <a href="#">ACLMessage</a> with desired <a href="#">MessageTemplate</a> is received.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="is-active.html">isActive</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">isActive</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="action.html">action</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">action</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

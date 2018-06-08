@@ -1,0 +1,102 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ModernContractNetResponder - jade-modern-agent</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">jade-modern-agent</a>&nbsp;/&nbsp;<a href="../index.html">it.lamba.behaviours</a>&nbsp;/&nbsp;<a href="./index.html">ModernContractNetResponder</a><br/>
+<br/>
+<h1>ModernContractNetResponder</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">ModernContractNetResponder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ContractNetResponder</span></code>
+<p>Commodity class for <a href="#">ContractNetResponder</a>.</p>
+<h3>Parameters</h3>
+<p><a name="modernAgent"></a>
+<code>modernAgent</code> - The <a href="../../it.lamba.agents/-modern-agent/index.html">ModernAgent</a> which will add this <a href="#">jade.core.behaviours.Behaviour</a>.</p>
+<p><a name="cfpTemplate"></a>
+<code>cfpTemplate</code> - The <a href="#">MessageTemplate</a> that will be used to filter incoming messages.</p>
+<p><a name="verbose"></a>
+<code>verbose</code> - Enable logging on console. By default <code>true</code></p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ModernContractNetResponder</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.ModernContractNetResponder$<init>(it.lamba.agents.ModernAgent, jade.lang.acl.MessageTemplate, kotlin.Boolean)/modernAgent">modernAgent</span><span class="symbol">:</span>&nbsp;<a href="../../it.lamba.agents/-modern-agent/index.html"><span class="identifier">ModernAgent</span></a><span class="symbol">, </span><span class="identifier" id="it.lamba.behaviours.ModernContractNetResponder$<init>(it.lamba.agents.ModernAgent, jade.lang.acl.MessageTemplate, kotlin.Boolean)/cfpTemplate">cfpTemplate</span><span class="symbol">:</span>&nbsp;<span class="identifier">MessageTemplate</span><span class="symbol">, </span><span class="identifier" id="it.lamba.behaviours.ModernContractNetResponder$<init>(it.lamba.agents.ModernAgent, jade.lang.acl.MessageTemplate, kotlin.Boolean)/verbose">verbose</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">)</span></code>
+<p>Commodity class for <a href="#">ContractNetResponder</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="verbose.html">verbose</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">verbose</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Enable logging on console. By default <code>true</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="handle-accept-proposal.html">handleAcceptProposal</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">handleAcceptProposal</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.ModernContractNetResponder$handleAcceptProposal(jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage)/cfp">cfp</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">, </span><span class="identifier" id="it.lamba.behaviours.ModernContractNetResponder$handleAcceptProposal(jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage)/propose">propose</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">, </span><span class="identifier" id="it.lamba.behaviours.ModernContractNetResponder$handleAcceptProposal(jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage)/accept">accept</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ACLMessage</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="handle-cfp.html">handleCfp</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">handleCfp</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.ModernContractNetResponder$handleCfp(jade.lang.acl.ACLMessage)/cfp">cfp</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ACLMessage</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="handle-reject-proposal.html">handleRejectProposal</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">handleRejectProposal</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.ModernContractNetResponder$handleRejectProposal(jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage)/cfp">cfp</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">, </span><span class="identifier" id="it.lamba.behaviours.ModernContractNetResponder$handleRejectProposal(jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage)/propose">propose</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">, </span><span class="identifier" id="it.lamba.behaviours.ModernContractNetResponder$handleRejectProposal(jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage)/reject">reject</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-contract-proposal-accepted.html">onContractProposalAccepted</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onContractProposalAccepted</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.ModernContractNetResponder$onContractProposalAccepted(jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage)/cfp">cfp</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">, </span><span class="identifier" id="it.lamba.behaviours.ModernContractNetResponder$onContractProposalAccepted(jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage)/propose">propose</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">, </span><span class="identifier" id="it.lamba.behaviours.ModernContractNetResponder$onContractProposalAccepted(jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage)/accept">accept</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ACLMessage</span></code>
+<p>Callback method invoked when the current contract proposal has been accepted.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-contract-proposal-rejected.html">onContractProposalRejected</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onContractProposalRejected</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.ModernContractNetResponder$onContractProposalRejected(jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage)/cfp">cfp</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">, </span><span class="identifier" id="it.lamba.behaviours.ModernContractNetResponder$onContractProposalRejected(jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage)/propose">propose</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">, </span><span class="identifier" id="it.lamba.behaviours.ModernContractNetResponder$onContractProposalRejected(jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage, jade.lang.acl.ACLMessage)/reject">reject</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Callback invoked when the agent who initiated the contract refused the proposal.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-contract-received.html">onContractReceived</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onContractReceived</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.ModernContractNetResponder$onContractReceived(jade.lang.acl.ACLMessage)/cfp">cfp</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ACLMessage</span></code>
+<p>Callback method invoked when a new contract is received.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

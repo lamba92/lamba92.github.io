@@ -1,0 +1,9 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:it.lamba$addRmaAgent(jade.wrapper.ContainerController)it.lamba/jade.wrapper.-container-controller/add-rma-agent.html
+$dokka.location:it.lamba$createNewAgent(jade.wrapper.ContainerController, java.lang.Class((it.lamba.agents.ModernAgent)), kotlin.String, kotlin.Array((kotlin.String)))it.lamba/jade.wrapper.-container-controller/create-new-agent.html
+$dokka.location:it.lamba$createNewAgent(jade.wrapper.ContainerController, kotlin.reflect.KClass((it.lamba.agents.ModernAgent)), kotlin.String, kotlin.Array((kotlin.String)))it.lamba/jade.wrapper.-container-controller/create-new-agent.html
+$dokka.location:it.lamba$run(jade.wrapper.AgentController)it.lamba/jade.wrapper.-agent-controller/run.html
+it.lamba
+it.lamba.agents
+it.lamba.behaviours

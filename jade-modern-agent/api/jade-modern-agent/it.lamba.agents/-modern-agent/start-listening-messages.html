@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ModernAgent.startListeningMessages - jade-modern-agent</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">jade-modern-agent</a>&nbsp;/&nbsp;<a href="../index.html">it.lamba.agents</a>&nbsp;/&nbsp;<a href="index.html">ModernAgent</a>&nbsp;/&nbsp;<a href="./start-listening-messages.html">startListeningMessages</a><br/>
+<br/>
+<h1>startListeningMessages</h1>
+<a name="it.lamba.agents.ModernAgent$startListeningMessages(kotlin.Int)"></a>
+<code><span class="keyword">fun </span><span class="identifier">startListeningMessages</span><span class="symbol">(</span><span class="identifier" id="it.lamba.agents.ModernAgent$startListeningMessages(kotlin.Int)/messageType">messageType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-2<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Start listening to messages, calling <a href="on-message-received.html">onMessageReceived</a> every new message. By default, every message received is processed, if you need to listen only specified message use the parameter <a href="start-listening-messages.html#it.lamba.agents.ModernAgent$startListeningMessages(kotlin.Int)/messageType">messageType</a> using values from class <a href="#">ACLMessage</a>.</p>
+<h3>Parameters</h3>
+<p><a name="messageType"></a>
+<code>messageType</code> - Message types are specified in <a href="#">ACLMessage</a> class as public <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>s. Default is -2 which means all messages, including unknown ones.</p>
+</BODY>
+</HTML>

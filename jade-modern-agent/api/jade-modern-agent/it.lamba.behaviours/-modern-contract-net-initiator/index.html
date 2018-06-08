@@ -1,0 +1,134 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ModernContractNetInitiator - jade-modern-agent</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">jade-modern-agent</a>&nbsp;/&nbsp;<a href="../index.html">it.lamba.behaviours</a>&nbsp;/&nbsp;<a href="./index.html">ModernContractNetInitiator</a><br/>
+<br/>
+<h1>ModernContractNetInitiator</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">ModernContractNetInitiator</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ContractNetInitiator</span></code>
+<p>Commodity class for <a href="#">ContractNetInitiator</a>.</p>
+<h3>Parameters</h3>
+<p><a name="modernAgent"></a>
+<code>modernAgent</code> - The <a href="../../it.lamba.agents/-modern-agent/index.html">ModernAgent</a> which will add this <a href="#">jade.core.behaviours.Behaviour</a>.</p>
+<p><a name="cfpMessage"></a>
+<code>cfpMessage</code> - The CFP message that will be sent to the receivers.</p>
+<p><a name="verbose"></a>
+<code>verbose</code> - Enable logging on console. By default <code>true</code></p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ModernContractNetInitiator</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.ModernContractNetInitiator$<init>(it.lamba.agents.ModernAgent, jade.lang.acl.ACLMessage, kotlin.Boolean)/modernAgent">modernAgent</span><span class="symbol">:</span>&nbsp;<a href="../../it.lamba.agents/-modern-agent/index.html"><span class="identifier">ModernAgent</span></a><span class="symbol">, </span><span class="identifier" id="it.lamba.behaviours.ModernContractNetInitiator$<init>(it.lamba.agents.ModernAgent, jade.lang.acl.ACLMessage, kotlin.Boolean)/cfpMessage">cfpMessage</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">, </span><span class="identifier" id="it.lamba.behaviours.ModernContractNetInitiator$<init>(it.lamba.agents.ModernAgent, jade.lang.acl.ACLMessage, kotlin.Boolean)/verbose">verbose</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">)</span></code>
+<p>Commodity class for <a href="#">ContractNetInitiator</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="verbose.html">verbose</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">verbose</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Enable logging on console. By default <code>true</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="handle-all-responses.html">handleAllResponses</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">handleAllResponses</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.ModernContractNetInitiator$handleAllResponses(java.util.Vector((kotlin.Any)), java.util.Vector((kotlin.Any)))/responses">responses</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Vector.html"><span class="identifier">Vector</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="it.lamba.behaviours.ModernContractNetInitiator$handleAllResponses(java.util.Vector((kotlin.Any)), java.util.Vector((kotlin.Any)))/acceptances">acceptances</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Vector.html"><span class="identifier">Vector</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="handle-failure.html">handleFailure</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">handleFailure</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.ModernContractNetInitiator$handleFailure(jade.lang.acl.ACLMessage)/failure">failure</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="handle-inform.html">handleInform</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">handleInform</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.ModernContractNetInitiator$handleInform(jade.lang.acl.ACLMessage)/inform">inform</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="handle-propose.html">handlePropose</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">handlePropose</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.ModernContractNetInitiator$handlePropose(jade.lang.acl.ACLMessage, java.util.Vector((kotlin.Any)))/propose">propose</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">, </span><span class="identifier" id="it.lamba.behaviours.ModernContractNetInitiator$handlePropose(jade.lang.acl.ACLMessage, java.util.Vector((kotlin.Any)))/acceptances">acceptances</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Vector.html"><span class="identifier">Vector</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="handle-refuse.html">handleRefuse</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">handleRefuse</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.ModernContractNetInitiator$handleRefuse(jade.lang.acl.ACLMessage)/refuse">refuse</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-action-performed.html">onActionPerformed</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onActionPerformed</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.ModernContractNetInitiator$onActionPerformed(jade.lang.acl.ACLMessage)/inform">inform</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Callback method invoked when the agent who won the contract performs the action.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-contract-time-expired.html">onContractTimeExpired</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onContractTimeExpired</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.ModernContractNetInitiator$onContractTimeExpired(kotlin.Array((jade.lang.acl.ACLMessage)))/responses">responses</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><span class="identifier">ACLMessage</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><span class="identifier">ACLMessage</span><span class="symbol">&gt;</span></code>
+<p>Callback method invoked when the contract time expired or all receivers in the cfpMessage.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-failure-received.html">onFailureReceived</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onFailureReceived</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.ModernContractNetInitiator$onFailureReceived(jade.lang.acl.ACLMessage)/failure">failure</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Callback method invoked when a communication between this agent a receiver went wrong.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-propose-received.html">onProposeReceived</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onProposeReceived</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.ModernContractNetInitiator$onProposeReceived(jade.lang.acl.ACLMessage)/propose">propose</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Callback method invoked with a propose <a href="#">ACLMessage</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-refuse-received.html">onRefuseReceived</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onRefuseReceived</span><span class="symbol">(</span><span class="identifier" id="it.lamba.behaviours.ModernContractNetInitiator$onRefuseReceived(jade.lang.acl.ACLMessage)/refuse">refuse</span><span class="symbol">:</span>&nbsp;<span class="identifier">ACLMessage</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Callback method invoked when previous offer was rejected.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
